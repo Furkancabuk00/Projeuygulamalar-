@@ -1,0 +1,88 @@
+/* Body stilini güncelleyelim */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #40ff00;
+}
+
+/* Başlık (h1) stilini güncelleyelim */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Ana konteyner (container) stilini güncelleyelim */
+div {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiketlerin (label) stilini güncelleyelim */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Metin giriş alanlarının (input[type="text"]) stilini güncelleyelim */
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Düğmelerin (button) stilini güncelleyelim */
+button {
+    width: 60px;
+    padding: 8px;
+    border: none;
+    background-color: #4c00fc;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Düğmelerin (button) üzerine gelindiğindeki stilini güncelleyelim */
+button:hover {
+    background-color: #0051ff;
+}
+
+/* Sonuç (sonuc) alanının stilini güncelleyelim */
+#sonuc {
+    margin-top: 20px;
+}
+
+/* Liste öğelerinin (li) stilini güncelleyelim */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* .button sınıfının stilini güncelleyelim */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #f70606;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* .button sınıfının üzerine gelindiğindeki stilini güncelleyelim */
+.button:hover {
+    background-color: #fafafa;
+}

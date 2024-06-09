@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkçe Kelime Anlamı Bulma</title>
+    <link rel="stylesheet" href="/static/css/turkce.css">
+    <script>
+        async function kelimeAnlamiBul() {
+            const kelime = document.getElementById("kelime").value;
+            const url = `https://sozluk.gov.tr/gts?ara=${kelime}`;
+            const response = await fetch(url);
+            const data = await response.json();
+            
+            let anlamlar = "";
+            if (data[0]) {
+                data[0].anlamlarListe.forEach(anlam => {
+                    anlamlar += `<li>${anlam.anlam}</li>`;
+                });
+                document.getElementById("sonuc").innerHTML = `<ul>${anlamlar}</ul>`;
+            } else {
+                document.getElementById("sonuc").innerHTML = `Aradığınız kelimenin anlamı bulunamadı. "Böyle Bir Kelime Bulunmuyor"`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Türkçe Kelime Anlamı Bulma</h1>
+    <div>
+        <label for="kelime">Kelime: </label>
+        <input type="text" id="kelime" name="kelime">
+        <button onclick="kelimeAnlamiBul()">Ara</button>
+        <a href="{{ url_for('home') }}" class="button">ANASAYFA'YA DÖN</a>
+    </div>
+    <div id="sonuc"></div>
+</body>
+</html>

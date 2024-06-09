@@ -1,0 +1,50 @@
+/* Tüm sayfaya genel stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #01ff41; /* Arka plan rengi */
+}
+
+/* Header stili */
+header {
+    background-color: #ffffff; /* Header arka plan rengi */
+    color: #000000; /* Metin rengi */
+    padding: 20px; /* Kenar boşluğu */
+    text-align: center; /* Metnin ortalanması */
+}
+
+/* Başlık (h1) stili */
+h1 {
+    margin: 0; /* Kenar boşluğu kaldırma */
+}
+
+/* Ana bölüm (main) stili */
+main {
+    padding: 20px; /* Kenar boşluğu */
+}
+
+/* Ana konteyner (container) stili */
+.container {
+    display: flex; /* Öğelerin yan yana düzenlenmesi */
+    justify-content: center; /* Öğelerin yatayda merkezlenmesi */
+    align-items: center; /* Öğelerin dikeyde merkezlenmesi */
+    height: 100vh; /* Tam ekran yüksekliği */
+}
+
+/* Düğme (button) stili */
+.button {
+    display: inline-block; /* Öğelerin blok düzende görüntülenmesi */
+    padding: 10px 20px; /* Düğme içeriği için dolgular */
+    margin: 0 10px; /* Düğmeler arası boşluk */
+    background-color: #0c9215ed; /* Düğme arka plan rengi */
+    color: #ffffff; /* Düğme metin rengi */
+    text-decoration: none; /* Metin altı çizgisinin kaldırılması */
+    border-radius: 5px; /* Köşelerin yuvarlanması */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+/* Düğmelerin (button) üzerine gelindiğindeki stili */
+.button:hover {
+    background-color: #ccff00; /* Düğme arka plan renginin değişmesi */
+}
